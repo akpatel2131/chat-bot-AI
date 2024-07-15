@@ -1,0 +1,194 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  width: 500px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.MainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ChatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.MessageList {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.MessageInput {
+  margin-top: auto;
+}
+
+.UploadProgress {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.file-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: 1px dashed gray;
+  border-radius: 4px;
+  padding: 0.8em;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.divider {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+
+.file-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.successfully-upload {
+  font-size: 14px;
+  font-weight: 600;
+  color: lightgreen;
+}
+
+.upload-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  & .MuiBox-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+  }
+
+  & .css-r40f8v-MuiTypography-root {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.chat-header {
+  background-color: #1e5c96;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+  & Button {
+    color: white;
+    border-color: white;
+    font-size: 10px;
+  }
+}
+
+.chat-bot {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #94072b;
+  padding: 8px 15px;
+  border-radius: 40px;
+}
+
+.chat-action {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cs-message-list__scroll-wrapper {
+  padding-right: 10px;
+}
+
+.toast-container {
+  width: 200px;
+}
+
+.cs-message--incoming  {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  #root {
+    padding: 0;
+  }
+
+  .App {
+    width: 360px;
+  }
+
+  .cs-message-list__scroll-wrapper {
+    padding-right: 0px;
+  }
+}
